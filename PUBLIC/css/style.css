@@ -32,6 +32,7 @@ body
     background-color: black;
     transition: 0.3s;
     border-radius: 0;
+    cursor: default;
 }
 .btn:hover
 {

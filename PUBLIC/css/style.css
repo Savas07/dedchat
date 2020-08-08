@@ -16,7 +16,32 @@ body
     height: 100vh;
     width: 100vw;
 }
-.title-bar
+#navbar
+{
+    display: block;
+    height: 2rem;
+    background-color: #1e1e1f;
+}
+.buttons
+{
+    float: right;
+    
+}
+.btn
+{
+    background-color: black;
+    transition: 0.3s;
+    border-radius: 0;
+}
+.btn:hover
+{
+    background-color: grey;
+}
+#close-btn:hover
+{
+    background-color: brown;
+}
+#navbar
 {
     -webkit-app-region: drag;
     -webkit-user-select: none;
@@ -40,7 +65,7 @@ button
     width: 1080px;
     height: 540px;
     margin: 0;
-    padding-top: 5%;
+    padding-top: 0;
     background-color: black;
 }
 .title
@@ -107,4 +132,8 @@ input[type=password]
 a:hover
 {
     color: brown;
+}
+.white
+{
+    color: white;
 }

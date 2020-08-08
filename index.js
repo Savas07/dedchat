@@ -5,8 +5,9 @@ function createWindow() {
     // Tarayıcı penceresini oluştur.
     let win = new BrowserWindow({
         width: 1080,
-        height: 530,
+        height: 540,
         frame: false,
+        resizable: false,
         webPreferences: {
             nodeIntegration: true
         }

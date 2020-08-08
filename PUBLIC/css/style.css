@@ -1,0 +1,110 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+a{
+    color: honeydew;
+    transition: ease-in 0.25s;
+}
+body
+{
+    background-image: url(/icons/background.jpg);
+    font-family: 'pixel_operatorbold';
+    height: 100vh;
+    width: 100vw;
+}
+.title-bar
+{
+    -webkit-app-region: drag;
+    -webkit-user-select: none;
+}
+button 
+{
+    -webkit-app-region: no-drag;
+}
+.btn
+{
+    -webkit-app-region: no-drag;
+}
+
+.login-form
+{
+    width: 340px;
+    margin: 10% auto 20% auto;
+}
+.form-container
+{
+    width: 1080px;
+    height: 540px;
+    margin: 0;
+    padding-top: 5%;
+    background-color: black;
+}
+.title
+{
+    font-family: Hacked;
+    src: url(https://hackedfont.com/HACKED.ttf);
+    color: black;
+    font-size: 7rem;
+    background-color: white;
+    display: inline;
+    align-self: start;
+    position: relative;
+    left: 3%;    
+}
+
+.form-control
+{
+    background-color: transparent;
+    border: 0px;
+
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+}
+.input-symbol
+{
+    
+}
+.input-symbol::after
+{
+    content: ">";
+    color: gray;
+    display: inline-block;
+    font-size: 1.5rem;
+    position: relative;
+    top: -20px;
+}
+input[type=text]:focus
+{
+    background-color: transparent;
+    outline: 0;
+}
+input[type=password]:focus
+{
+background-color: transparent;
+outline: 0;
+}
+input[type=text]
+{
+    padding-left: 20px;
+    font-family: 'pixel_operatorbold';
+}
+input[type=password]
+{
+    padding-left: 20px;
+    font-family: 'pixel_operatorbold';
+    
+}
+a:hover
+{
+    color: brown;
+}

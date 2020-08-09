@@ -8,6 +8,7 @@ function createWindow() {
         height: 540,
         frame: false,
         resizable: false,
+        icon: __dirname + '/PUBLIC/icons/logo.png',
         webPreferences: {
             nodeIntegration: true
         }

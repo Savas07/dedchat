@@ -15,6 +15,7 @@ body
     font-family: 'pixel_operatorbold';
     height: 100vh;
     width: 100vw;
+    -webkit-user-select: none;
 }
 #navbar
 {
@@ -31,14 +32,13 @@ body
     display: flex;
     height: 100%;
 }
-.btn
+.buttons .btn
 {
     background-color: black;
     padding: 0;
     margin: 0;
     transition: 0.3s;
     border-radius: 0;
-    cursor: default;
     height: 100%;
     width: 5px;
 
@@ -78,6 +78,7 @@ button
 .login-form
 {
     width: 340px;
+    height: 100%;
     margin: 10% auto 20% auto;
 }
 .form-container
@@ -94,11 +95,15 @@ button
     src: url(https://hackedfont.com/HACKED.ttf);
     color: black;
     font-size: 7rem;
-    background-color: white;
     display: inline;
     align-self: start;
     position: relative;
-    left: 3%;    
+    left: 3%;
+
+    background: linear-gradient(to right, #ffe600 0%, #5e5e5e 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;    
+	-webkit-text-fill-color: transparent;
 }
 
 .form-control
@@ -117,7 +122,7 @@ button
 }
 .input-symbol
 {
-    
+    height: 10%;
 }
 .input-symbol::after
 {
@@ -126,7 +131,7 @@ button
     display: inline-block;
     font-size: 1.5rem;
     position: relative;
-    top: -20px;
+    top: -38px;
 }
 input[type=text]:focus
 {

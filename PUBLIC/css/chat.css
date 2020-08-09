@@ -1,0 +1,25 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    width: 1080px;
+    height: 540px;
+    font-family: 'pixel_operatorbold';
+}
+.container
+{
+    top: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+
+}
+.col
+{
+    background-color: grey;
+    border: 1px solid black;
+}

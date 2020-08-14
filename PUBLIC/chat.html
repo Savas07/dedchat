@@ -30,27 +30,48 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="room-container col">
-                col
+            <div class="col-md-2">
+                <div class="row">
+                    <div class="container color rooms">
+                        servers/rooms
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="container color something">
+                        somethinng
+                    </div>
+                </div>
             </div>
-            <div class="chat-container col">
-                col
+
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="container color">
+                        chatt log
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="container color">
+                        message input
+                    </div>
+                </div>
             </div>
-            <div class="users-tab col">
-                col
+
+            <div class="col-md-3 color">
+                <div class="row">
+                    users
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col something">
-                col
-            </div>
-            <div class="col msg-input">
-                col
-            </div>
+
         </div>
     </div>
+
+
+
+
+
+
     <script src="/socket.io/socket.io.js"></script>
     <script src="js/main.js"></script>
 </body>

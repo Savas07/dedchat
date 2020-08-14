@@ -10,16 +10,29 @@ body
     height: 540px;
     font-family: 'pixel_operatorbold';
 }
-.container
+.container-fluid
 {
-    top: 0;
-    right: 0;
-    padding: 0;
-    margin: 0;
-
+    width: 1080px;
+    height: 540px;
+    margin: auto;
+    padding: 16px;
+    background-color: black;
 }
-.col
+.color
 {
     background-color: grey;
     border: 1px solid black;
+}
+.rooms
+{
+    width: 176px;
+    height: 440px;
+    margin-right: 8px;
+    margin-bottom: 16px;
+    margin-left: 28px;
+}
+.something
+{
+    margin-right: 8px;
+    margin-left: 28px;
 }

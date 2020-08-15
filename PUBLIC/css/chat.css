@@ -3,10 +3,104 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 body
 {
     width: 1080px;
     height: 540px;
     font-family: 'pixel_operatorbold';
+    
+}
+.color
+{
+    background-color: grey;
+}
+.container
+{
+    width: 1080px;
+    height: 540px;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    padding-top: 16px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:"rooms chat-log users" "something msg-input users";
+    justify-items: stretch;
+    background-color: black;
+
+    grid-template-columns: min-content;
+    grid-template-rows: min-content;
+}
+.rooms
+{
+    height: 440px;
+    width: 176px;
+    grid-area: rooms;
+    margin-left: 16px;
+    margin-bottom: 16px;
+}
+.something
+{
+    width: 176px;
+    height: 32px;
+    grid-area: something;
+    margin-left: 16px;
+    margin-bottom: 8px;
+}
+
+
+
+
+/* style.css inherits    */
+
+#navbar
+{
+    display: block;
+    height: 18px;
+    background-color: #1e1e1f;
+    -webkit-app-region: drag;
+}
+#navbar .buttons {
+    float: right;
+    position: relative;
+    right: 0;
+    top: 0;
+    display: flex;
+    height: 100%;
+}
+#navbar .buttons .btn {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    transition: 0.3s;
+    border-radius: 0;
+    height: 100%;
+    width: 5px;
+    text-align: center;
+    padding: 2px;
+    width: 30px;
+    transition: 0.2s;
+}
+.btn {
+    -webkit-app-region: no-drag;
+}
+.btn span svg
+{
+    width: 100%;
+    height: 100%;
+}
+.btn:hover
+{
+    background-color: grey;
+}
+#close-btn:hover
+{
+    background-color: brown;
+}
+.white
+{
+    color: white;
 }

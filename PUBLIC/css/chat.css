@@ -4,6 +4,12 @@
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
+    user-select: none;
+    
+}
+img
+{
+    -webkit-user-drag: none;
 }
 body
 {
@@ -15,6 +21,8 @@ body
 .color
 {
     background-color: grey;
+    text-align: center;
+    border-radius: 3px;
 }
 .container
 {
@@ -33,6 +41,7 @@ body
 
     grid-template-columns: min-content;
     grid-template-rows: min-content;
+
 }
 .rooms
 {
@@ -50,8 +59,45 @@ body
     margin-left: 16px;
     margin-bottom: 8px;
 }
-
-
+.hover-btn:hover
+{  
+    background-color: grey;
+}
+.close-btn:hover
+{
+    background-color: brown;
+}
+.chat-log
+{
+    grid-area: chat-log;
+    margin-left: 8px;
+    margin-bottom: 16px;
+    width: 697px;
+    height: 440px;
+    max-width: 100%;
+    overflow-x: hidden; 
+    overflow-y: scroll;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.chat-log img
+{
+    width: 100%;
+    height: 100%;
+}
+.msg-input
+{
+    grid-area: msg-input;
+    margin-left: 8px;
+    width: 697px;
+    height: 32px;
+}
+.users
+{
+    grid-area: users;
+    width: 144px;
+    height: 488px;
+}
 
 
 /* style.css inherits    */

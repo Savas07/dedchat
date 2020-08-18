@@ -54,12 +54,19 @@
         </div>
 
         <div class="chat-log color">
-            chat-log
-
-            <img src="https://www.cloudflare.com/img/learning/og-images/cdn-lc.png" alt="">
+            <label for="user/room-name">user deneme</label>
+            <div class="chat-messages"></div>
         </div>
+
         <div class="msg-input color">
-            msg-input
+
+            <form id="chat-form" novalidate>
+
+                <input id="msg" type="text" role="textbox" placeholder="Enter Message" spellcheck="false" required
+                    autocomplete="off" />
+                <button id="msg-send" class="btn"><i class="fas fa-paper-plane"></i></button>
+
+            </form>
         </div>
 
         <div class="users color">
@@ -68,6 +75,10 @@
     </div>
 
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js"
+        integrity="sha512-BHtomM5XDcUy7tDNcrcX1Eh0RogdWiMdXl3wJcKB3PFekXb3l5aDzymaTher61u6vEZySnoC/SAj2Y/p918Y3w=="
+        crossorigin="anonymous"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="js/main.js"></script>
     <script src="js/menu-functions.js"></script>

@@ -19,3 +19,5 @@ $('#maximize-btn').click(function () {
 $('#close-btn').click(function () {
     win.close();
 });
+
+

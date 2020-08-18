@@ -79,6 +79,9 @@ body
     overflow-y: scroll;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
+
+    padding-left: 10px;
+    padding-right: 10px ;
 }
 .chat-log img
 {
@@ -97,6 +100,38 @@ body
     grid-area: users;
     width: 144px;
     height: 488px;
+}
+#msg
+{
+    border: 0;
+    background-color: rgb(65, 65, 65);
+    float: left;
+    width: 90%;
+    height: 100%;
+}
+#msg:focus
+{
+    outline-style: none;
+}
+.btn:focus
+{
+    box-shadow: none;
+}
+form .btn:hover
+{
+    background-color: cornflowerblue;
+}
+form .btn:active
+{
+    background-color: brown;
+    color: whitesmoke;
+}
+
+#msg-send
+{
+    border-radius: 0;
+    width: 10%;
+    height: 100%;
 }
 
 
@@ -149,4 +184,74 @@ body
 .white
 {
     color: white;
+}
+
+
+
+
+
+/* Chat messages log */
+.chat-messages .message {
+	padding:0;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    display: block;
+
+    background-color: #000d1a;
+}
+.chat-messages .message .meta {
+	font-size: 15px;
+	font-weight: bold;
+	color: var(--dark-color-b);
+	opacity: 0.7;
+	margin-bottom: 0px;
+}
+.chat-messages .message .meta span {
+    color: whitesmoke;
+    user-select: text;
+}
+.chat-messages .message .meta span::selection
+{
+    background-color: black;
+    color: yellowgreen;
+}
+.chat-messages .text
+{
+    padding-left: 10px;
+    height: min-content;
+    float: left;
+    clear: both;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-bottom: 0;
+}
+
+.chat-messages .meta
+{
+    float: left;
+    display: block;
+    clear: both;
+    padding-left: 10px;
+    background-color: crimson;
+}
+input
+{
+    padding-left: 5px;
+}
+input::selection
+{
+    background-color: black;
+    color: yellowgreen;
+}
+.chat-messages p
+{
+    user-select: text;
+}
+
+.chat-messages p::selection
+{
+    background-color: black;
+    color: yellowgreen;
 }

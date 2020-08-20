@@ -162,3 +162,24 @@ a:hover
 {
     color: white;
 }
+input:focus
+{
+    outline-style: none;
+    outline: none;
+    box-shadow: none;
+}
+input:active
+{
+    outline-style: none;
+    outline: none;
+    box-shadow: none;
+}
+.form-control:focus
+{
+    box-shadow: none;
+}
+input::selection
+{
+    background-color: black;
+    color: yellowgreen;
+}

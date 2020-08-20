@@ -3,8 +3,8 @@ const express = require('express');
 const app = express();
 const http = require('http');
 const socketio = require('socket.io');
-const formatMessage = require('./PUBLIC/js/messages');
-const { userJoin, getCurrentUser, userLeave, getRoomUsers } = require('./PUBLIC/js/users');
+const formatMessage = require(path.join(__dirname, 'PUBLIC/js/messages'));
+const { userJoin, getCurrentUser, userLeave, getRoomUsers } = require(path.join(__dirname, 'PUBLIC/js/users'));
 
 
 const server = http.createServer(app);

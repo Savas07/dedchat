@@ -58,6 +58,8 @@ body
     grid-area: something;
     margin-left: 16px;
     margin-bottom: 8px;
+    background-color: #000d1a;
+
 }
 .hover-btn:hover
 {  
@@ -165,6 +167,42 @@ form .btn:active
     width: 30px;
     transition: 0.2s;
 }
+#navbar .btn:hover {
+    background-color: grey;
+}
+#navbar .btn.close-red:hover
+{
+    background-color: brown;
+
+}
+.leave
+{
+    color: crimson;
+    margin-right: 3px;
+    position: relative;
+    top: 1.5px;
+}
+.something a
+{
+padding-top: 3px;
+color: crimson;
+background-color: #000d1a;
+
+width:100%;
+}
+.something a:hover
+{
+    color: white;
+    background-color: #000d1a;
+
+}
+.something a:active
+{
+    color: yellowgreen;
+    background-color: #000d1a;
+}
+
+
 .btn {
     -webkit-app-region: no-drag;
 }
@@ -176,10 +214,6 @@ form .btn:active
 .btn:hover
 {
     background-color: grey;
-}
-#close-btn:hover
-{
-    background-color: brown;
 }
 .white
 {

@@ -2,10 +2,11 @@
   "name": "dedchat",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "dev": "node server.js",
-    "start": "electron index.js"
+    "start": "electron index.js",
+    "dist": "electron-builder"
   },
   "repository": {
     "type": "git",
@@ -18,13 +19,26 @@
   },
   "homepage": "https://github.com/Savas07/dedchat#readme",
   "dependencies": {
-    "electron": "^9.1.2",
     "express": "^4.17.1",
     "jquery": "^3.5.1",
     "moment": "^2.27.0",
     "socket.io": "^2.3.0"
   },
   "devDependencies": {
+    "electron": "^9.1.2",
+    "electron-builder": "^22.8.0",
     "nodemon": "^2.0.4"
+  },
+  "build": {
+    "appId": "com.dedchat.app",
+    "productName": "dedchat",
+    "target": "NSIS",
+    "directories": {
+      "output": "build"
+    },
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false
+    }
   }
 }

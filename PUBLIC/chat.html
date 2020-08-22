@@ -54,7 +54,7 @@
         </div>
 
         <div class="chat-log color">
-            <label for="user/room-name">user deneme</label>
+            <label id="room-name" for="user/room-name">oda ismi bulunamadı</label>
             <div class="chat-messages"></div>
         </div>
 
@@ -71,18 +71,11 @@
 
         <div class="users color">
             users
+            <ul id="users">
+            </ul>
         </div>
     </div>
 
-
-    <script type="text/javascript">
-        window.onbeforeunload = function () {
-            return 'Are you sure you want to leave?';
-        };
-        window.onunload = function () {
-            alert('Bye.');
-        }
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js"
         integrity="sha512-BHtomM5XDcUy7tDNcrcX1Eh0RogdWiMdXl3wJcKB3PFekXb3l5aDzymaTher61u6vEZySnoC/SAj2Y/p918Y3w=="
         crossorigin="anonymous"></script>

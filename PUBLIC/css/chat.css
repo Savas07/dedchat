@@ -102,6 +102,8 @@ body
     grid-area: users;
     width: 144px;
     height: 488px;
+
+    overflow-y: scroll;
 }
 #msg
 {
@@ -288,4 +290,13 @@ input::selection
 {
     background-color: black;
     color: yellowgreen;
+}
+
+li
+{
+    width: 80%;
+    margin: auto;
+    background-color: #000d1a;
+    border-radius: 3px;
+    color: whitesmoke;
 }

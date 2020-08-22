@@ -19,16 +19,21 @@ io.on('connection', socket => {
 
     socket.on('joinRoom', ({ username, room }) => {
 
-        const user = userJoin(socket.id, username, 'main');
+        const user = userJoin(socket.id, username, room);
 
-        socket.join('main');
+        socket.join(user.room);
 
 
         socket.emit('message', formatMessage(botName, 'welcome to dedchat'));
 
-        socket.broadcast.to('main').emit('message', formatMessage(botName, `${user.username} sohbete katıldı`));
+        socket.broadcast.to(user.room).emit('message', formatMessage(botName, `${user.username} sohbete katıldı`));
 
 
+        // send users and room info
+        io.to(user.room).emit('roomUsers', {
+            room: user.room,
+            users: getRoomUsers(user.room)
+        });
     });
 
 
@@ -46,6 +51,11 @@ io.on('connection', socket => {
         if (user) {
             io.to(user.room).emit('message', formatMessage(botName, `${user.username} sohbeti terk etti`));
         };
+
+        io.to(user.room).emit('roomUsers', {
+            room: user.room,
+            users: getRoomUsers(user.room)
+        });
     });
 });
 

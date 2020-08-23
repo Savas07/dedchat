@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "node server.js",
     "start": "electron index.js",
-    "dist": "electron-builder"
+    "dist": "electron-builder",
+    "git": "git push origin master"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,7 @@
     "appId": "com.dedchat.app",
     "productName": "dedchat",
     "target": "NSIS",
+    "icon": "PUBLIC/icons/logo.png",
     "directories": {
       "output": "build"
     },

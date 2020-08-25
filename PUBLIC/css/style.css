@@ -11,7 +11,6 @@ a{
 }
 body
 {
-    background-image: url(/icons/background.jpg);
     font-family: 'pixel_operatorbold';
     height: 100vh;
     width: 100vw;
@@ -87,7 +86,7 @@ button
     height: 540px;
     margin: 0;
     padding-top: 0;
-    background-color: black;
+    background-color: transparent;
 }
 .title
 {
@@ -105,7 +104,10 @@ button
     -webkit-background-clip: text;    
 	-webkit-text-fill-color: transparent;
 }
-
+.form-group
+{
+    margin-bottom: 0;
+}
 .form-control
 {
     background-color: transparent;
@@ -182,4 +184,33 @@ input::selection
 {
     background-color: black;
     color: yellowgreen;
+}
+#vantaNet
+{
+    position: absolute;
+    z-index: -2;
+    display: block;
+    width: 1080;
+    height: 540;
+    background-color:black;
+}
+form
+{
+    background-color:#1e1e1f;
+    border-radius: 3px;
+    padding: 5px;
+}
+label
+{
+    text-decoration-color: black;
+    color:black;
+}
+button.login
+{
+    text-decoration-color: black;
+    color:black;
+}
+select
+{
+    float:right;
 }

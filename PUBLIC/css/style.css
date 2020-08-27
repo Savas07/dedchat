@@ -90,8 +90,9 @@ button
 }
 .title
 {
-    font-family: Hacked;
-    src: url(https://hackedfont.com/HACKED.ttf);
+   /* font-family: Hacked;
+    src: url(https://hackedfont.com/HACKED.ttf);*/
+    font-family: 'hackedregular';
     color: black;
     font-size: 7rem;
     display: inline;

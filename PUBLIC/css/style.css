@@ -79,6 +79,8 @@ button
     width: 340px;
     height: 100%;
     margin: 10% auto 20% auto;
+
+    filter: drop-shadow(0 0 0.50rem yellow);
 }
 .form-container
 {
@@ -100,6 +102,9 @@ button
     position: relative;
     left: 3%;
 
+-webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: black;
+    filter: drop-shadow(0 0 0.75rem yellowgreen);
     background: linear-gradient(to right, #ffe600 0%, #5e5e5e 100%);
     background-clip: border-box;
     -webkit-background-clip: text;    
@@ -214,4 +219,8 @@ button.login
 select
 {
     float:right;
+}
+.form-group button
+{
+    color: black;
 }
